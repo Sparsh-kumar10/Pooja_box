@@ -1,0 +1,829 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* .hemburger--menu{
+    width: 50%;
+} */
+.hemburger--nav{
+    background: #E85992;
+
+}
+.hemburger--item{
+    display: flex;
+    justify-content:space-between;
+    padding:8px 15px;
+
+}
+.hemburger--item a{
+    color: white;
+    font-size: large;
+}
+.rakhi-11-aug{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: .1px solid rgba(128, 128, 128, 0.132);
+}
+
+.rakhi-11-aug-items{
+    display: flex;
+    align-items: center;
+}
+
+.rakhi-11-aug-items img{
+    border-radius: 50%;
+    height: 40px;
+}
+.rakhi-11-aug-items p{
+    padding-left: 15px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.674);
+    font-size: medium;
+    text-transform: uppercase;
+
+}
+.rakhi-11-aug-dropkit{
+    border: 1px;
+
+}
+.toggle-rakhi-item{
+    display: none;
+}
+.myElement {
+    display: block;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 1rem;
+    margin: 10px;
+}
+.toggle-rakhi-item div{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.toggle-rakhi-item div img{
+    border-radius: 50%;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.toggle-rakhi-item div p{
+    text-transform: uppercase;
+    font-size: 10px;
+
+
+}
+
+
+
+
+
+.app_link{
+    display: none;
+}
+.annoucement{
+    padding: 5px 0px;
+    background-color: rgb(232,89,146);
+}
+.annoucement .text{
+   text-align: center;
+   color: white;
+   font-size: 11px;
+   font-weight: 1000;
+   letter-spacing: 2px;
+   font-family: 'Lato', sans-serif;
+   margin: 0 !important;
+
+}
+
+
+
+
+.header a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    background-color: #FFFFFF;
+    padding: 18px 50px;
+    margin:0 40px ;
+    display: grid;
+    grid-template-columns: 8em 30em 1fr;
+}
+
+
+/* LOGO */
+.logo a p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .1em;
+    
+}
+.logo a #L1{
+    font-family: 'EB Garamond', serif;
+    color: rgb(219,175,91);
+    font-size: 1em;
+}
+.logo a #L2{
+    color: rgb(219,175,91);
+    font-size: 1.2em;
+    /* letter-spacing: 1px; */
+}
+.logo a #L3{
+    
+    color: rgb(219,175,91);
+    font-size: .5em;
+}
+/* nav item */
+.content{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-left: 10px;
+}
+.content .item a{
+    font-weight: 50;
+    color: rgba(40, 40, 40, 0.75);
+}
+.content .item a:hover{
+    border-bottom: 1px solid rgba(40, 40, 40, 0.75);
+}
+.hemburger{
+    display: none;
+}
+.arrow{
+    margin-left: 8px;
+    border: 1px solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-bottom: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.sub-menu{
+    display: none;
+    padding: 2em;
+    box-shadow: 0px 0px 1px 1px  gray;
+}
+.sub-menu ul{
+    list-style: none;
+    margin-right: 2em;
+}
+.sub-menu ul li{
+    padding: .5em 0em;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;;
+}
+.content .item1:hover .sub-menu{
+    position: absolute; 
+    display: flex;
+    top: 6em;
+    background-color: #FFFFFF;
+}
+
+
+
+/* cart icon */
+.cart{
+    grid-column: 3/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.cart .search_icon a img{
+    width: 25px;
+    height: 25px;
+}
+.cart .search_icon p{
+    font-size: .6em;
+}
+.cart .cart_icon a img{
+    width: 25px;
+    height: 25px;
+}
+.cart .cart_icon p{
+    font-size: .6em;
+}
+
+
+
+
+/* big image */
+
+.main img{
+    width: 100%;
+}
+
+.main-item{
+    margin: .5em 3.5em;
+    /* border: 1px solid black; */
+}
+
+
+
+
+.categories{
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories button{
+    width: 2em;
+    height: 4em;
+    align-items: center;
+    background-color: white;
+    border: none;
+    color: rgb(174, 175, 175);
+    position: relative;
+    top: -.7em;
+}
+.categories button:hover{
+    cursor: pointer;
+}
+
+.categories_item{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 9.5em;
+    overflow-x: auto;
+    padding: 1em 0em 0em 0em;
+    grid-gap: .5em;
+}
+.categories_item::-webkit-scrollbar{
+    width: 0;
+}
+.categories_item .cate{
+    overflow: hidden;
+}
+.categories_item .cate:hover img{
+    transform: scale(1.02);
+}
+.categories_item .cate img{
+    width: 100%;
+    border-radius: 50%;
+    transition: transform .2s;
+}
+.categories_item .cate a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: .7em;
+}
+.categories_item .cate a p{
+    padding-top: 10px;
+}
+
+
+
+/* rakhi gifts */
+
+.rakhi_gifts{
+    display: grid;
+    grid-template-rows: minmax(1fr,3em)  1fr;
+    /* border: 1px solid black; */
+    grid-gap: .5em;
+    margin-top: 1.2em;
+}
+
+.heading{
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: space-between;
+      padding: 0em 2.1em;
+      font-size: 20px;
+}
+.heading button{
+    background-color: rgb(211,19,79);
+    padding: 8px 9px 9px 10px;
+    border: none;
+    color: white;
+}
+.rakhi_items{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: .5em;
+    padding: 0em 2.6em;
+}
+.card-media{
+    position: relative;
+    overflow: hidden;
+}
+.card-media:hover img{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.card-media img{
+   max-width: 100%;
+   transition: transform .3s;
+
+}
+.cart-info .name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: .3em 0em;
+}
+.cart-info{
+    display: grid;
+}
+.price{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 2%;
+    color: white;
+    box-shadow: 0px -20px 15px -15px rgb(21, 16, 16) inset;
+
+}
+.cart-info button{
+    width: 100%;
+    margin-bottom: .5em;
+    border: none;
+    padding: .5em;
+    background-color: rgb(211,19,79);
+    color: white;
+}
+
+
+
+@media (max-width:990px){
+    .content{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .logo{
+        grid-column: 2/3;
+    }
+    .hemburger{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    .hemburger i{
+        font-size: 1.8em;
+    }
+    .hemburger p{
+        font-size: .8em;
+    }
+
+    .main-item{
+        margin: .5em .5em;
+    }
+
+    .categories_item{
+        grid-auto-columns: 13em;
+    }
+
+    .rakhi_items{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .rakhi_gifts .card4,.card5,.card6{
+        display: none;
+    }
+}
+
+
+
+
+
+/* offer */
+.offer img{
+    width: 100%;
+    margin: 2em 0em;
+}
+
+
+
+
+/* new launch */
+.New_launch img{
+    width: 100%;
+    margin: 2em 0em;
+}
+
+
+/* follow instagram */
+.follow_heading{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    padding: 0em 2.6em;
+}
+.follow_items{
+  display: flex;
+  padding: 0em 2.6em;
+}
+.follow_items .card-media img{
+ max-width: 100%;
+ object-fit: cover;
+}
+.card-media{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items:flex-end;
+}
+
+
+
+
+.text{
+    margin: 2em 2.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.text h1{
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.text p{
+    color: rgb(82, 82, 82);
+    font-size: 15px;
+}
+.text button{
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+/* policy */
+
+.policy{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1em 0em;
+    border-top: 1px solid rgb(202, 202, 202);
+}
+.policy p{
+    font-size: .7em;
+    color: rgb(164, 164, 164);
+}
+.policy .delivery{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(202, 202, 202);
+}
+.policy .cod{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(202, 202, 202);
+}
+.policy .return{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(255,175,182);
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    flex-direction: column;
+    padding: 25px 0px 13px 0px;
+    grid-gap: 1em;
+}
+.footer_top{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-rows: repeat(auto-fit,minma(200px,1fr));
+    justify-content:space-between;
+    padding: 0px 50px 50px 50px;
+    grid-gap: 2em;
+}
+.footer_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 1em 1em 1em;
+    gap: 3em;
+}
+.social_media{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.social_media a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 3px 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.social_media a i{
+    margin-right: 8px;
+}
+
+
+.footer_top .information p{
+     font-size: 20px;
+     color: white;
+     margin-bottom: 1em;
+     margin-left: 2em;
+}
+.footer_top .information ul{
+    list-style: none;
+}
+
+.footer_top .information ul li{
+    padding: .5em 0em;
+    padding-right: 0em;
+}
+.footer_top .information ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.footer_top .information ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+
+.footer_top .about p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+.footer_top .about ul{
+   list-style: none;
+}
+
+.footer_top .about ul li{
+   padding: .5em 0em;
+}
+.footer_top .about ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 16px;
+}
+.footer_top .about ul li a:hover{
+   border-bottom: 1px solid white;
+}
+
+.footer_top .customer_care p{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+.footer_top .customer_care ul{
+    list-style: none;
+}
+.footer_top .customer_care ul li{
+    padding: .5em 0em;
+    color: white;
+    font-size: 16px;
+}
+.footer_top .customer_care ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 0em 6em;
+}
+.footer_bottom .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.footer_bottom .left p{
+    color: white;
+}
+.footer_bottom .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.footer_bottom .right p{
+    color: white;
+}
+.footer_bottom .right a img{
+    width: 3em;
+}
+
+
+@media (max-width:870px){
+    .footer_top{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0em;
+        margin: 0;
+        gap: 0;
+    }
+    .social_media{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .footer_logo{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid white;
+
+    }
+    .information{
+        display: flex;
+        border-bottom: 1px solid white;
+        margin-top: 1em;
+        
+    }
+    .information ul{
+        display: none;
+    }
+
+    .about{
+        margin-top: 1em;
+        border-bottom: 1px solid white;
+    }
+    .about ul{
+        display: none;
+    }
+
+    .customer_care{
+        margin-top: 1em;
+        border-bottom: 1px solid white;
+    }
+    .customer_care ul{
+        display: none;
+    }
+
+
+
+    .footer_bottom{
+        flex-direction: column;
+        margin-top: 2em;
+        gap: 2em;
+    }
+}
+
+
+@media (max-width:750px){
+    .app_link{
+      display: flex;
+      align-items: center;
+      background-color: rgb(211,19,79);
+      color: white;
+      grid-template-columns: 2em 1fr;
+      padding: 0em;
+      font-size: 1em;
+    }
+    .app_link div{
+        margin-right: 9em;
+        margin-left: 1em;
+    }
+    .app_link p{
+      text-align: center;
+      margin-left: .5em;
+    }
+    .categories_item{
+        grid-auto-columns: 6em;
+    }
+    .categories button{
+        display: none;
+    }
+    .heading{
+        padding: 0em .4em;
+    }
+    .rakhi_items{
+        padding: 0em .4em;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .rakhi_items .card3{
+        display: none;
+    }
+    header{
+          padding: 5px 0px;
+    }
+    .footer_bottom{
+        margin: 3em;
+    }
+}
+
+
+
+.hemburger--menu{
+    display: none;
+    position: absolute;
+    background-color:#FFFFFF;
+    width: 100%;
+    top: -.2em;
+    left: -100%;
+}
+.showMenu{
+    display: block;
+    position: absolute;
+}
+.hemburger--nav{
+    background: #E85992;
+
+}
+.hemburger--item{
+    display: flex;
+    justify-content:space-between;
+    padding:8px 15px;
+
+}
+.hemburger--item a{
+    color: white;
+    font-size: large;
+}
+.rakhi-11-aug{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: .1px solid rgba(128, 128, 128, 0.132);
+}
+
+.rakhi-11-aug-items{
+    display: flex;
+    align-items: center;
+}
+
+.rakhi-11-aug-items img{
+    border-radius: 50%;
+    height: 40px;
+}
+.rakhi-11-aug-items p{
+    padding-left: 15px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.674);
+    font-size: medium;
+    text-transform: uppercase;
+
+}
+.rakhi-11-aug-dropkit{
+    border: 1px;
+
+}
+.toggle-rakhi-item{
+    display: none;
+}
+.myElement {
+    display: block;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 1rem;
+    margin: 10px;
+}
+.toggle-rakhi-item div{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.toggle-rakhi-item div img{
+    border-radius: 50%;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.toggle-rakhi-item div p{
+    text-transform: uppercase;
+    font-size: 10px;
+}
