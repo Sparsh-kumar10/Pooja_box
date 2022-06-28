@@ -827,3 +827,10 @@ footer{
     text-transform: uppercase;
     font-size: 10px;
 }
+
+@media (max-width:415px){
+    .footer_bottom .left{
+        display: flex;
+        flex-direction: column;
+    }
+}
