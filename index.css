@@ -705,17 +705,21 @@ footer{
 
 @media (max-width:750px){
     .app_link{
-      display: flex;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 2em 1fr 20em 1fr;
       background-color: rgb(211,19,79);
       color: white;
-      grid-template-columns: 2em 1fr;
-      padding: 0em;
-      font-size: 1em;
     }
-    .app_link div{
-        margin-right: 9em;
-        margin-left: 1em;
+    .app_link .cross{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .app_link .app{
+        grid-column: 3/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .app_link p{
       text-align: center;
@@ -740,8 +744,9 @@ footer{
     header{
           padding: 5px 0px;
     }
-    .footer_bottom{
-        margin: 3em;
+    .footer_bottom div{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -833,4 +838,5 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    
 }
