@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    outline: 2px solid black;
 }
 /* .hemburger--menu{
     width: 50%;
@@ -705,6 +706,7 @@ footer{
 
 @media (max-width:750px){
     .app_link{
+
       display: grid;
       grid-template-columns: 2em 1fr 20em 1fr;
       background-color: rgb(211,19,79);
@@ -838,5 +840,7 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    
+    .header header{
+        margin: .2em 1em;
+    }
 }
